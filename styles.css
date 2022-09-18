@@ -9,6 +9,7 @@ h1{
   color: #ffffff;
   position: absolute;
   top: 140px;
+  z-index: 10;
 }
 body {
   background-color: #ffffff;
@@ -34,20 +35,20 @@ body {
   left: 50%;
 }
 .color-part {
-  height: 13.12em;
-  width: 13.12em;
+  height: 210px;
+  width: 210px;
   position: absolute;
   cursor: pointer;
 }
 .green {
   background-color: #027802;
-  border-radius: 13em 0 0 0;
+  border-radius: 420px 0 0 0;
   top: 30px;
   left: 30px;
 }
 .red {
   background-color: #950303;
-  border-radius: 0 13em 0 0;
+  border-radius: 0 420px 0 0;
   top: 30px;
   right: 30px;
 }
@@ -55,13 +56,13 @@ body {
   background-color: #01018a;
   bottom:  30px;
   right:  30px;
-  border-radius: 0 0 13em 0;
+  border-radius: 0 0 420px 0;
 }
 .yellow {
   background-color: #919102;
   bottom: 30px;
   left: 30px;
-  border-radius: 0 0 0 13em;
+  border-radius: 0 0 0 420px;
 }
 .simon:before {
   position: absolute;
@@ -126,12 +127,40 @@ body {
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 510px) {
   body {
     font-size: 10px;
   }
   .mainContainer {
-    height: 560px;
-    width: 560px;
+    height: 500px;
+    width: 500px;
+  }
+  #level-title{
+    margin-bottom: 50px;
+    font-size: 30px;
+  }
+  .green {
+    background-color: #027802;
+    border-radius: 420px 0 0 0;
+    top: 30px;
+    left: 30px;
+  }
+  .red {
+    background-color: #950303;
+    border-radius: 0 420px 0 0;
+    top: 30px;
+    right: 30px;
+  }
+  .blue {
+    background-color: #01018a;
+    bottom:  30px;
+    right:  30px;
+    border-radius: 0 0 420px 0;
+  }
+  .yellow {
+    background-color: #919102;
+    bottom: 30px;
+    left: 30px;
+    border-radius: 0 0 0 420px;
   }
 }
